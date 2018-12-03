@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher_background" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonZoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zoom"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:layout_marginRight="4dp"
+            android:padding="16dp"
+            android:onClick="zoom"
+            />
+
+        <Button
+            android:id="@+id/buttonMove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/move"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:onClick="move"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBlink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Blink"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:layout_marginRight="4dp"
+            android:padding="16dp"
+            android:onClick="blink"
+            />
+
+        <Button
+            android:id="@+id/buttonSlideUP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SLIDE UP"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:onClick="slideUp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FADE"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:layout_marginRight="4dp"
+            android:padding="16dp"
+            android:onClick="fade"/>
+
+        <Button
+            android:id="@+id/buttonSlideDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SLIDE DOWN"
+            android:background="@color/colorButton"
+            android:textColor="#ffffff"
+            android:onClick="slideDown" />
+
+    </LinearLayout>
+
+</LinearLayout>
